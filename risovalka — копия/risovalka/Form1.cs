@@ -22,6 +22,7 @@ namespace risovalka
         bool TriangleDraw = false;
         bool ColorRed = false;
         bool FatDraw = false;
+        bool EllipseDraw = false;
 
 
         int x, y;
@@ -79,7 +80,7 @@ namespace risovalka
 
                         pictureBox1.Image = b.bitMapImage;
                     }
-                    else if (Control.ModifierKeys ==Keys.Control)
+                    else if (Control.ModifierKeys == Keys.Control)
                     {
                         Rectangle r = new Rectangle(0, 0, pictureBox1.Width - 1, pictureBox1.Height - 1);
                         bbb = bitMapImage.Clone(r, System.Drawing.Imaging.PixelFormat.DontCare);
@@ -100,6 +101,15 @@ namespace risovalka
                         pictureBox1.Image = b.bitMapImage;
                     }
 
+                }
+                else if (EllipseDraw)
+                {
+                    Rectangle r = new Rectangle(0, 0, pictureBox1.Width - 1, pictureBox1.Height - 1);
+                    bbb = bitMapImage.Clone(r, System.Drawing.Imaging.PixelFormat.DontCare);
+                    Ellipse ellipse = new Ellipse(bbb, Color.Black);
+                    bbb = ellipse.Draw(x, y, e.X, e.Y);
+
+                    pictureBox1.Image = bbb;
                 }
 
                 else
@@ -171,6 +181,8 @@ namespace risovalka
             SquareDraw = false;
             CircleDraw = false;
             TriangleDraw = false;
+            EllipseDraw = false;
+
 
         }
 
@@ -180,6 +192,8 @@ namespace risovalka
             RectDraw = false;
             CircleDraw = false;
             TriangleDraw = false;
+            EllipseDraw = false;
+
 
         }
 
@@ -189,6 +203,8 @@ namespace risovalka
             RectDraw = false;
             SquareDraw = false;
             TriangleDraw = false;
+            EllipseDraw = false;
+
 
         }
 
@@ -199,6 +215,8 @@ namespace risovalka
             SquareDraw = false;
             CircleDraw = false;
             TriangleDraw = false;
+            EllipseDraw = false;
+
         }
 
 
@@ -217,6 +235,8 @@ namespace risovalka
             RectDraw = false;
             SquareDraw = false;
             CircleDraw = false;
+            EllipseDraw = false;
+
         }
 
         private void Fat_Click(object sender, EventArgs e)
@@ -226,6 +246,17 @@ namespace risovalka
             SquareDraw = false;
             CircleDraw = false;
             TriangleDraw = false;
+            EllipseDraw = false;
+        }
+
+        private void Ellipse_Click(object sender, EventArgs e)
+        {
+            EllipseDraw = true;
+            CircleDraw = false;
+            RectDraw = false;
+            SquareDraw = false;
+            TriangleDraw = false;
+
         }
 
         private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
