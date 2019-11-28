@@ -9,6 +9,7 @@ using System.Drawing;
 // this is test ignore this branch
 // dkav13 hello world
 //Hey world
+// Brush cs отдельный коммит
 
 namespace risovalka
 {
