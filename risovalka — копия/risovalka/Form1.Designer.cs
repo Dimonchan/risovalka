@@ -30,7 +30,13 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Fat = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.Triangle = new System.Windows.Forms.Button();
             this.Red = new System.Windows.Forms.Button();
             this.Brush = new System.Windows.Forms.Button();
@@ -55,7 +61,13 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.Fat);
+            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.Triangle);
             this.panel1.Controls.Add(this.Red);
             this.panel1.Controls.Add(this.Brush);
@@ -68,15 +80,68 @@
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // Fat
+            // button7
             // 
-            this.Fat.Location = new System.Drawing.Point(285, 31);
-            this.Fat.Name = "Fat";
-            this.Fat.Size = new System.Drawing.Size(75, 23);
-            this.Fat.TabIndex = 6;
-            this.Fat.Text = "Fat";
-            this.Fat.UseVisualStyleBackColor = true;
-            this.Fat.Click += new System.EventHandler(this.Fat_Click);
+            this.button7.BackColor = System.Drawing.Color.MediumPurple;
+            this.button7.Location = new System.Drawing.Point(717, 13);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(39, 26);
+            this.button7.TabIndex = 13;
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.DarkGray;
+            this.button6.Location = new System.Drawing.Point(717, 45);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(39, 26);
+            this.button6.TabIndex = 12;
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Red;
+            this.button5.Location = new System.Drawing.Point(582, 14);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(39, 26);
+            this.button5.TabIndex = 11;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Blue;
+            this.button4.Location = new System.Drawing.Point(627, 14);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(39, 26);
+            this.button4.TabIndex = 10;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Yellow;
+            this.button3.Location = new System.Drawing.Point(672, 13);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(39, 26);
+            this.button3.TabIndex = 9;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(672, 45);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(39, 26);
+            this.button2.TabIndex = 8;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LimeGreen;
+            this.button1.Location = new System.Drawing.Point(627, 45);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(39, 26);
+            this.button1.TabIndex = 7;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // Triangle
             // 
@@ -90,8 +155,8 @@
             // 
             // Red
             // 
-            this.Red.BackColor = System.Drawing.Color.Red;
-            this.Red.Location = new System.Drawing.Point(582, 14);
+            this.Red.BackColor = System.Drawing.Color.Black;
+            this.Red.Location = new System.Drawing.Point(582, 46);
             this.Red.Name = "Red";
             this.Red.Size = new System.Drawing.Size(39, 26);
             this.Red.TabIndex = 5;
@@ -165,7 +230,13 @@
         private System.Windows.Forms.Button Brush;
         private System.Windows.Forms.Button Red;
         private System.Windows.Forms.Button Triangle;
-        private System.Windows.Forms.Button Fat;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

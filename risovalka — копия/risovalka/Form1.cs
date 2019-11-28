@@ -219,14 +219,7 @@ namespace risovalka
             CircleDraw = false;
         }
 
-        private void Fat_Click(object sender, EventArgs e)
-        {
-            FatDraw = true;
-            RectDraw = false;
-            SquareDraw = false;
-            CircleDraw = false;
-            TriangleDraw = false;
-        }
+     
 
         private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
         {

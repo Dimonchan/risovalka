@@ -34,3 +34,12 @@ C:\Users\User\Desktop\risovalka2\risovalka\risovalka\obj\Debug\risovalka.Propert
 C:\Users\User\Desktop\risovalka2\risovalka\risovalka\obj\Debug\risovalka.csproj.GenerateResource.cache
 C:\Users\User\Desktop\risovalka2\risovalka\risovalka\obj\Debug\risovalka.exe
 C:\Users\User\Desktop\risovalka2\risovalka\risovalka\obj\Debug\risovalka.pdb
+C:\Users\User\source\repos\risovalka\risovalka — копия\risovalka\bin\Debug\risovalka.exe.config
+C:\Users\User\source\repos\risovalka\risovalka — копия\risovalka\bin\Debug\risovalka.exe
+C:\Users\User\source\repos\risovalka\risovalka — копия\risovalka\bin\Debug\risovalka.pdb
+C:\Users\User\source\repos\risovalka\risovalka — копия\risovalka\obj\Debug\risovalka.csprojAssemblyReference.cache
+C:\Users\User\source\repos\risovalka\risovalka — копия\risovalka\obj\Debug\risovalka.Form1.resources
+C:\Users\User\source\repos\risovalka\risovalka — копия\risovalka\obj\Debug\risovalka.Properties.Resources.resources
+C:\Users\User\source\repos\risovalka\risovalka — копия\risovalka\obj\Debug\risovalka.csproj.GenerateResource.cache
+C:\Users\User\source\repos\risovalka\risovalka — копия\risovalka\obj\Debug\risovalka.exe
+C:\Users\User\source\repos\risovalka\risovalka — копия\risovalka\obj\Debug\risovalka.pdb
