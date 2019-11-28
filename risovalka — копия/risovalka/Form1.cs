@@ -20,8 +20,7 @@ namespace risovalka
         bool SquareDraw = false;
         bool CircleDraw = false;
         bool TriangleDraw = false;
-        bool ColorRed = false;
-        bool FatDraw = false;
+        Color color = Color.Black;
 
 
         int x, y;
@@ -42,7 +41,7 @@ namespace risovalka
                 {
                     Rectangle r = new Rectangle(0, 0, pictureBox1.Width - 1, pictureBox1.Height - 1);
                     bbb = bitMapImage.Clone(r, System.Drawing.Imaging.PixelFormat.DontCare);
-                    Brush b = new Brush(bbb);
+                    Brush b = new Brush(bbb, color);
                     b.DrawRectangle(x, y, e.X, e.Y);
 
                     pictureBox1.Image = b.bitMapImage;
@@ -52,7 +51,7 @@ namespace risovalka
                 {
                     Rectangle r = new Rectangle(0, 0, pictureBox1.Width - 1, pictureBox1.Height - 1);
                     bbb = bitMapImage.Clone(r, System.Drawing.Imaging.PixelFormat.DontCare);
-                    Brush b = new Brush(bbb);
+                    Brush b = new Brush(bbb, color);
                     b.DrawSquare(x, y, e.X, e.Y);
 
                     pictureBox1.Image = b.bitMapImage;
@@ -62,7 +61,7 @@ namespace risovalka
                 {
                     Rectangle r = new Rectangle(0, 0, pictureBox1.Width - 1, pictureBox1.Height - 1);
                     bbb = bitMapImage.Clone(r, System.Drawing.Imaging.PixelFormat.DontCare);
-                    Brush b = new Brush(bbb);
+                    Brush b = new Brush(bbb,color);
                     b.DrawCircle(x, y, e.X, e.Y);
 
                     pictureBox1.Image = b.bitMapImage;
@@ -74,7 +73,7 @@ namespace risovalka
                     {
                         Rectangle r = new Rectangle(0, 0, pictureBox1.Width - 1, pictureBox1.Height - 1);
                         bbb = bitMapImage.Clone(r, System.Drawing.Imaging.PixelFormat.DontCare);
-                        Brush b = new Brush(bbb);
+                        Brush b = new Brush(bbb,color);
                         b.PryamoiTr(x, y, e.X, e.Y);
 
                         pictureBox1.Image = b.bitMapImage;
@@ -83,7 +82,7 @@ namespace risovalka
                     {
                         Rectangle r = new Rectangle(0, 0, pictureBox1.Width - 1, pictureBox1.Height - 1);
                         bbb = bitMapImage.Clone(r, System.Drawing.Imaging.PixelFormat.DontCare);
-                        Brush b = new Brush(bbb);
+                        Brush b = new Brush(bbb, color);
                         b.DrawRavnoBedrTr(x, y, e.X, e.Y);
 
                         pictureBox1.Image = b.bitMapImage;
@@ -94,7 +93,7 @@ namespace risovalka
                     {
                         Rectangle r = new Rectangle(0, 0, pictureBox1.Width - 1, pictureBox1.Height - 1);
                         bbb = bitMapImage.Clone(r, System.Drawing.Imaging.PixelFormat.DontCare);
-                        Brush b = new Brush(bbb);
+                        Brush b = new Brush(bbb, color);
                         b.RavnoStoron(x, y, e.X, e.Y);
 
                         pictureBox1.Image = b.bitMapImage;
@@ -104,7 +103,7 @@ namespace risovalka
 
                 else
                 {
-
+/*
                     if (FatDraw)
                     {
                         Rectangle r = new Rectangle(0, 0, pictureBox1.Width - 1, pictureBox1.Height - 1);
@@ -121,16 +120,16 @@ namespace risovalka
                         pictureBox1.Image = b.bitMapImage;
                     }
                     else
-                    {
+                    {*/
                         Rectangle r = new Rectangle(0, 0, pictureBox1.Width - 1, pictureBox1.Height - 1);
                         bbb = bitMapImage.Clone(r, System.Drawing.Imaging.PixelFormat.DontCare);
-                        Brush b = new Brush(bitMapImage);
+                        Brush b = new Brush(bitMapImage,color);
                         b.DrawLine(x, y, e.Location.X, e.Location.Y);
                         x = e.X;
                         y = e.Y;
                         
                         pictureBox1.Image = b.bitMapImage;
-                    }
+                    //}
 
                 }
 
@@ -202,15 +201,6 @@ namespace risovalka
         }
 
 
-
-
-
-        private void Red_Click(object sender, EventArgs e)
-        {
-            //Brush b = new Brush(Color.Red);
-            //ColorRed = true;
-        }
-
         private void Triangle_Click(object sender, EventArgs e)
         {
             TriangleDraw = true;
@@ -219,7 +209,60 @@ namespace risovalka
             CircleDraw = false;
         }
 
-     
+        private void button_Red_Click(object sender, EventArgs e)
+        {
+            this.color = Color.Red;
+        }
+
+        private void button_Blue_Click(object sender, EventArgs e)
+        {
+            this.color = Color.Blue;
+        }
+
+        private void button_LimeGreen_Click(object sender, EventArgs e)
+        {
+            this.color = Color.LimeGreen;
+        }
+
+        private void button_Yellow_Click(object sender, EventArgs e)
+        {
+            this.color = Color.Yellow;
+        }
+
+        private void button_White_Click(object sender, EventArgs e)
+        {
+            this.color = Color.White;
+        }
+
+        private void button_MediumPurple_Click(object sender, EventArgs e)
+        {
+            this.color = Color.MediumPurple;
+        }
+
+        private void button_DarkGray_Click(object sender, EventArgs e)
+        {
+            this.color = Color.DarkGray;
+        }
+
+        private void button_Pulm_Click(object sender, EventArgs e)
+        {
+            this.color = Color.Purple;
+        }
+
+        private void button_DarkGreen_Click(object sender, EventArgs e)
+        {
+            this.color = Color.DarkGreen;
+        }
+
+        private void button_Magenta_Click(object sender, EventArgs e)
+        {
+            this.color = Color.Magenta;
+        }
+
+        private void button_DarkGoldenrod_Click(object sender, EventArgs e)
+        {
+            this.color = Color.DarkGoldenrod;
+        }
 
         private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
         {

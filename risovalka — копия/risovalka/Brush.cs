@@ -10,19 +10,17 @@ namespace risovalka
 {
     public class Brush
     {
-        Color color=Color.Black;
+        Color color = Color.Black;
         public Bitmap bitMapImage;
 
 
-        public Brush(Bitmap b)
+        public Brush(Bitmap b, Color color)
         {
             bitMapImage = b;
-        }
-
-        public Brush(Color color)
-        {
             this.color = color;
         }
+
+       
 
         public Bitmap DrawLine(int x1, int y1, int x2, int y2)
         {
