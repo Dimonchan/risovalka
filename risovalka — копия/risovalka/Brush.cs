@@ -128,7 +128,15 @@ namespace risovalka
 
 
             int r = Math.Abs(x2 - x1);
-            int x3 = x1 + r / 2;
+            int x3;
+            if (x1 > x2)
+            {
+                x3 = x2 + r / 2;
+            }
+            else
+            {
+                x3 = x1 + r / 2;
+            }
             int a = r / 2;
             int b = Convert.ToInt32(Math.Sqrt(r*r-a*a));
             int y3 = y1 - b;
